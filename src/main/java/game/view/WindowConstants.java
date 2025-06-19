@@ -1,4 +1,4 @@
-package window;
+package game.view;
 
 /**
  * Sets some important settings for the game window.

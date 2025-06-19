@@ -2,7 +2,7 @@ package game;
 
 import javax.swing.JFrame;
 
-import window.GameWindow;
+import game.view.GameWindow;
 
 public class Main {
 

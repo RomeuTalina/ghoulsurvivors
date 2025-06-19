@@ -1,0 +1,40 @@
+package utility;
+
+public class Vector2 {
+
+    public float x;
+    public float y;
+
+    public Vector2(float x, float y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    public Vector2() {
+        this.x = 0;
+        this.y = 0;
+    }
+
+    /**
+     * TODO
+     * Calculates the distance between vectors.
+     * 
+     * @param other The vector we want to compare the distance to.
+     * @return The distance
+     */
+    public float dist(Vector2 other) {
+        return 0.0f;
+    }
+
+    public Vector2 sub(Vector2 other) {
+        return new Vector2(this.x - other.x, this.y - other.y);
+    }
+
+    public Vector2 normalize() {
+        double length = Math.sqrt(this.x * this.x + this.y * this.y);
+        if (length == 0) {
+            return new Vector2();
+        }
+        return new Vector2((float) (this.x / length), (float) (this.y / length));
+    }
+}

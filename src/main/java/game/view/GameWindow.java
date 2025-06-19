@@ -1,4 +1,4 @@
-package window;
+package game.view;
 
 import javax.swing.JFrame;
 
