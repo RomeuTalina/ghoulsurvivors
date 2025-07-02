@@ -19,8 +19,6 @@ public class GamePanel extends JPanel implements Runnable {
 
     private Thread gameThread;
 
-    private double deltaTime;
-
     private KeyHandler keyHandler = new KeyHandler();
 
     public GamePanel() {

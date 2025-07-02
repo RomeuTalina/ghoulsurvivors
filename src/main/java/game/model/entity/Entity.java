@@ -16,6 +16,10 @@ public abstract class Entity extends GameComponent {
     }
 
     public Vector2 getPos() {
-        return pos;
+        return this.pos;
+    }
+
+    public GameModel getModel(){
+        return this.model;
     }
 }

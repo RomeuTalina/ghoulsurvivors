@@ -1,4 +1,3 @@
-game/Main.class
-window/GamePanel.class
-window/WindowConstants.class
-window/GameWindow.class
+game/view/WindowConstants.class
+utility/Vector2.class
+game/controller/KeyHandler.class

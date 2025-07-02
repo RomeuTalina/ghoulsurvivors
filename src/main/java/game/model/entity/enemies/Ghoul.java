@@ -4,7 +4,6 @@ import java.awt.Color;
 import java.awt.Graphics2D;
 
 import game.model.GameModel;
-import game.model.entity.Entity;
 import game.view.WindowConstants;
 import utility.Vector2;
 

@@ -9,7 +9,11 @@ import utility.Vector2;
 
 public class GameModel {
 
+    public static Vector2 cursorCoordinates;
+
     private ArrayList<GameComponent> components;
+    private ArrayList<GameComponent> componentsToAdd;
+    private ArrayList<GameComponent> componentsToRemove;
 
     private Player player;
 
@@ -17,6 +21,8 @@ public class GameModel {
 
     public GameModel(KeyHandler keyHandler) {
         this.components = new ArrayList<>();
+        this.componentsToAdd = new ArrayList<>();
+        this.componentsToRemove = new ArrayList<>();
         this.keyHandler = keyHandler;
     }
 
@@ -25,6 +31,17 @@ public class GameModel {
         for (GameComponent component : components) {
             component.update(deltaTime);
         }
+
+        for(GameComponent component : componentsToRemove){
+            this.components.remove(component);
+        } 
+        this.componentsToRemove.clear();
+
+        for(GameComponent component : componentsToAdd){
+            this.components.add(component);
+        } 
+        this.componentsToAdd.clear();
+
     }
 
     public void draw(Graphics2D g2) {
@@ -34,7 +51,11 @@ public class GameModel {
     }
 
     public void addComponent(GameComponent newComponent) {
-        components.add(newComponent);
+        this.componentsToAdd.add(newComponent);
+    }
+
+    public void removeComponent(GameComponent component) {
+        this.componentsToRemove.add(component);
     }
 
     public void addPlayer(Player player) {

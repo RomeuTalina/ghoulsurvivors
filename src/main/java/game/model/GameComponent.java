@@ -10,8 +10,8 @@ public abstract class GameComponent {
         this.model = model;
     }
 
-    public abstract void update(double deltaTime);
+    protected abstract void update(double deltaTime);
 
-    public abstract void draw(Graphics2D g2);
+    protected abstract void draw(Graphics2D g2);
 
 }

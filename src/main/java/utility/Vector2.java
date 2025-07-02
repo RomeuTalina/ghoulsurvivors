@@ -23,7 +23,13 @@ public class Vector2 {
      * @return The distance
      */
     public float dist(Vector2 other) {
-        return 0.0f;
+        float dx = other.x - this.x;
+        float dy = other.y - this.x;
+        return (float) Math.sqrt(dx*dx + dy*dy);
+    }
+
+    public Vector2 add(Vector2 other){
+        return new Vector2(this.x + other.x, this.y + other.y);
     }
 
     public Vector2 sub(Vector2 other) {
