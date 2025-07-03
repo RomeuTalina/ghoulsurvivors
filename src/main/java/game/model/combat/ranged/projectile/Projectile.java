@@ -6,7 +6,7 @@ import game.model.GameComponent;
 import game.model.GameModel;
 import utility.Vector2;
 
-public class Projectile extends GameComponent{
+public abstract class Projectile extends GameComponent{
 
     protected float lifetime;
     protected float speed;
@@ -18,17 +18,16 @@ public class Projectile extends GameComponent{
 	public Projectile(GameModel model, Vector2 pos, Vector2 target) {
 		super(model);
         this.pos = pos;
-        this.movementVector = this.pos.sub(target).normalize();
+        this.movementVector = target.sub(this.pos).normalize();
 	}
 
-    public Projectile newInstance(GameModel model, Vector2 pos, Vector2 target){
-        return new Projectile(model, pos, target);
-    }
+    public abstract Projectile newInstance(GameModel model, Vector2 pos, Vector2 target);
     
 	@Override
 	public void update(double deltaTime) {
         
-            this.pos = this.pos.add(movementVector);
+            Vector2 step = movementVector.mult(speed * (float) deltaTime * 200);
+            this.pos = this.pos.add(step);
 
             if(this.lifetime <= 0){
                 this.model.removeComponent(this);
@@ -37,9 +36,5 @@ public class Projectile extends GameComponent{
             lifetime -= deltaTime;
     }
 
-    @Override
-	public void draw(Graphics2D g2) {
-
-	}
-
+	public abstract void draw(Graphics2D g2); 
 }

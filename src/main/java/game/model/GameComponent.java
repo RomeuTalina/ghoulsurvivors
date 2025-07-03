@@ -8,6 +8,7 @@ public abstract class GameComponent {
 
     public GameComponent(GameModel model) {
         this.model = model;
+        this.model.addComponent(this);
     }
 
     protected abstract void update(double deltaTime);

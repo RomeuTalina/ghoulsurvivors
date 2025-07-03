@@ -8,6 +8,7 @@ import java.awt.Graphics2D;
 import javax.swing.JPanel;
 
 import game.controller.KeyHandler;
+import game.controller.MouseHandler;
 import game.model.GameModel;
 import game.model.entity.enemies.Ghoul;
 import game.model.entity.player.character.Al;
@@ -20,6 +21,7 @@ public class GamePanel extends JPanel implements Runnable {
     private Thread gameThread;
 
     private KeyHandler keyHandler = new KeyHandler();
+    private MouseHandler mouseHandler;
 
     public GamePanel() {
         this.setPreferredSize(new Dimension(WindowConstants.SCREEN_WIDTH, WindowConstants.SCREEN_HEIGHT));
@@ -31,6 +33,10 @@ public class GamePanel extends JPanel implements Runnable {
         // Remove this and make a new setup so I can have different models for different
         // screens.
         this.model = new GameModel(keyHandler);
+        this.mouseHandler = new MouseHandler(this.model);
+        this.addMouseListener(mouseHandler);
+        this.addMouseMotionListener(mouseHandler);
+        this.addMouseWheelListener(mouseHandler);
         this.model.addPlayer(new Al(this.model));
         this.model.addComponent(new Ghoul(this.model, 1, new Vector2(20, 20)));
     }

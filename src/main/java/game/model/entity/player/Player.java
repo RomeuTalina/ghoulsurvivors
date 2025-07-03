@@ -52,4 +52,5 @@ public abstract class Player extends Entity {
         g2.drawRect((int) this.pos.x - WindowConstants.TILE_SIZE / 2, (int) this.pos.y - WindowConstants.TILE_SIZE / 2,
                 WindowConstants.TILE_SIZE, WindowConstants.TILE_SIZE);
     }
+   
 }

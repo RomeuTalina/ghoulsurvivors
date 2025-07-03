@@ -4,25 +4,28 @@ import java.awt.Graphics2D;
 import java.util.ArrayList;
 
 import game.controller.KeyHandler;
+import game.controller.MouseHandler;
 import game.model.entity.player.Player;
 import utility.Vector2;
 
 public class GameModel {
 
-    public static Vector2 cursorCoordinates;
+    public static Vector2 cursorCoordinates = new Vector2();
 
     private ArrayList<GameComponent> components;
     private ArrayList<GameComponent> componentsToAdd;
     private ArrayList<GameComponent> componentsToRemove;
-
-    private Player player;
+    
+    private ArrayList<Player> players;
 
     public KeyHandler keyHandler;
+    public MouseHandler mouseHandler;
 
     public GameModel(KeyHandler keyHandler) {
         this.components = new ArrayList<>();
         this.componentsToAdd = new ArrayList<>();
         this.componentsToRemove = new ArrayList<>();
+        this.players = new ArrayList<>();
         this.keyHandler = keyHandler;
     }
 
@@ -60,10 +63,14 @@ public class GameModel {
 
     public void addPlayer(Player player) {
         components.add(player);
-        this.player = player;
+        this.players.add(player);
     }
 
+    public Player getPlayer(){
+        return this.players.get(0);
+    }
+    
     public Vector2 getPlayerPosition() {
-        return this.player.getPos();
+        return this.players.get(0).getPos();
     }
 }

@@ -9,5 +9,6 @@ public class Al extends Player {
     public Al(GameModel model) {
         super(model, 1.2f);
         addItem(new Gun(this));
+        this.selectedItem = this.inventory.get(0);
     }
 }

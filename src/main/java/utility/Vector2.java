@@ -16,7 +16,6 @@ public class Vector2 {
     }
 
     /**
-     * TODO
      * Calculates the distance between vectors.
      * 
      * @param other The vector we want to compare the distance to.
@@ -34,6 +33,10 @@ public class Vector2 {
 
     public Vector2 sub(Vector2 other) {
         return new Vector2(this.x - other.x, this.y - other.y);
+    }
+
+    public Vector2 mult(float mult) {
+        return new Vector2(this.x * mult, this.y * mult); 
     }
 
     public Vector2 normalize() {
