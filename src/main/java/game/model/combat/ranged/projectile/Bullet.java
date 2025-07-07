@@ -9,7 +9,7 @@ public class Bullet extends Projectile{
 
     public Bullet(GameModel model, Vector2 pos, Vector2 target) {
 		super(model, pos, target);
-        this.speed = 2;
+        this.speed = 3;
         this.damage = 6;
         this.area = 10;
         this.lifetime = 1.5f;

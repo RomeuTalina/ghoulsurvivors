@@ -19,3 +19,4 @@ game/model/combat/ranged/projectile/Bullet.class
 game/view/GamePanel.class
 game/controller/KeyHandler.class
 game/model/entity/enemies/Enemy.class
+utility/Collider.class

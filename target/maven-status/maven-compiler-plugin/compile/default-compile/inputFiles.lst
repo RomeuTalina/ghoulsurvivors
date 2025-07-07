@@ -16,6 +16,7 @@
 /home/rt05/dev/ghoulsurvivors/src/main/java/game/model/entity/Entity.java
 /home/rt05/dev/ghoulsurvivors/src/main/java/game/model/combat/weapon/Weapon.java
 /home/rt05/dev/ghoulsurvivors/src/main/java/game/model/inventory/Usable.java
+/home/rt05/dev/ghoulsurvivors/src/main/java/utility/Collider.java
 /home/rt05/dev/ghoulsurvivors/src/main/java/game/model/GameModel.java
 /home/rt05/dev/ghoulsurvivors/src/main/java/game/model/entity/enemies/Enemy.java
 /home/rt05/dev/ghoulsurvivors/src/main/java/utility/Vector2.java

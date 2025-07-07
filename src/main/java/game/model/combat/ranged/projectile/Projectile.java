@@ -26,7 +26,7 @@ public abstract class Projectile extends GameComponent{
 	@Override
 	public void update(double deltaTime) {
         
-            Vector2 step = movementVector.mult(speed * (float) deltaTime * 200);
+            Vector2 step = movementVector.mult(speed * (float) deltaTime * 400);
             this.pos = this.pos.add(step);
 
             if(this.lifetime <= 0){

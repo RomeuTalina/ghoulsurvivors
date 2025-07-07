@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ghoulsurvivors.AppTest" time="0.018" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ghoulsurvivors.AppTest" time="0.015" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="24"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/jdk-24.0.1-oracle-x64/lib"/>
-    <property name="sun.java.command" value="/home/rt05/dev/ghoulsurvivors/target/surefire/surefirebooter14120337530592903635.jar /home/rt05/dev/ghoulsurvivors/target/surefire 2025-07-03T18-13-01_525-jvmRun1 surefire6301517339742357437tmp surefire_018397003673211334661tmp"/>
+    <property name="sun.java.command" value="/home/rt05/dev/ghoulsurvivors/target/surefire/surefirebooter16624337112834278284.jar /home/rt05/dev/ghoulsurvivors/target/surefire 2025-07-07T14-20-10_052-jvmRun1 surefire17022228033478522794tmp surefire_02897424924227579756tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/rt05/dev/ghoulsurvivors/target/test-classes:/home/rt05/dev/ghoulsurvivors/target/classes:/home/rt05/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/rt05/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -27,13 +27,13 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/home/rt05/dev/ghoulsurvivors/target/surefire/surefirebooter14120337530592903635.jar"/>
+    <property name="surefire.real.class.path" value="/home/rt05/dev/ghoulsurvivors/target/surefire/surefirebooter16624337112834278284.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="24.0.1+9-30"/>
     <property name="user.name" value="rt05"/>
     <property name="stdout.encoding" value="UTF-8"/>
     <property name="path.separator" value=":"/>
-    <property name="os.version" value="6.15.3-200.fc42.x86_64"/>
+    <property name="os.version" value="6.15.4-200.fc42.x86_64"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
